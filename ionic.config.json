@@ -1,0 +1,8 @@
+{
+  "name": "AgTech",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "8cefcbd8"
+}

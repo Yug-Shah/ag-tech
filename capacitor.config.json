@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "AgTech",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
