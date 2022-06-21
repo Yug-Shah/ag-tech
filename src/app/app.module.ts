@@ -11,6 +11,7 @@ import {UserService} from './service/user.service';
 import {LoginComponent} from './components/login/login.component';
 import {SignupComponent} from './components/signup/signup.component';
 import {IntroductionComponent} from './components/introduction/introduction.component';
+import {WeatherService} from './service/weather.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {IntroductionComponent} from './components/introduction/introduction.comp
   ],
   providers: [
     UserService,
+    WeatherService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [

@@ -1,7 +1,7 @@
-import {Component, Injectable} from '@angular/core';
-import {UserService} from '../../service/user.service';
+import {Component} from '@angular/core';
 import {UserModel} from '../../model/user.model';
 import {AnimationBuilder} from '@ionic/angular';
+import {WeatherService} from '../../service/weather.service';
 
 @Component({
   selector: 'app-tab1',
@@ -10,10 +10,19 @@ import {AnimationBuilder} from '@ionic/angular';
 })
 export class Tab1Page {
   user: UserModel;
-  constructor(private userService: UserService) {}
+  city = 'Regina';
+  weather: any;
+  status: string;
+  temp: number;
+  description: string;
 
-  public showProfile() {
-    this.userService.getProfile().subscribe(data => { this.user = data; });
+  constructor(private weatherService: WeatherService) {
+    this.weatherService.getWeather(this.city).subscribe(res => {
+      this.weather = res.list[0];
+      this.status = this.weather.weather[0].main;
+      this.temp = this.weather.main.temp;
+      this.description = this.weather.weather[0].description;
+    });
   }
 }
 

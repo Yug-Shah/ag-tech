@@ -8,7 +8,7 @@ import {Observable} from 'rxjs';
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  getProfile() : Observable<UserModel>{
+  getProfile(): Observable<UserModel>{
     // TODO: Change the token to pool user data dynamically: getting token/user as an arg
     const baseUrl = 'http://localhost:8000';
     const reqHeader = new HttpHeaders()

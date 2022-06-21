@@ -1,7 +1,7 @@
 export interface WeatherModel {
-  day: string;
-  icon: string;
-  tempMax: string;
-  tempMin: string;
+  city: string;
+  status: string;
   description: string;
+  temp: number;
+  datetime: string;
 }
