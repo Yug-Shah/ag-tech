@@ -7,19 +7,17 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import {IntroductionComponent} from './components/introduction/introduction.component';
-import {LoginComponent} from './components/login/login.component';
+import {UserService} from './service/user.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    IntroductionComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserModule, HttpClientModule
+    BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule,
   ],
   providers: [
+    UserService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [

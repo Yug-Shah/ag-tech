@@ -3,6 +3,7 @@
     <ion-title>
       Prod-Yous
     </ion-title>
+    <ion-button (click)="showProfile()"></ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -14,4 +15,5 @@
   </ion-header>
 
   <app-explore-container name="Dashboard"></app-explore-container>
+  <div>{{ user.full_name }}</div>
 </ion-content>
