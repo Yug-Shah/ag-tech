@@ -9,15 +9,50 @@
 <ion-content>
   <ion-searchbar animated style="margin-top: 35px" showCancelButton="focus" autocorrect="on"></ion-searchbar>
   <ion-card class="kit-card">
-    <ion-button fill="outline" color="success" [routerLink]="['/basic']">Basic Starter Kit</ion-button>
+    <ion-grid>
+      <ion-row>
+        <ion-col style="text-align: left">
+          <ion-label>Label</ion-label>
+        </ion-col>
+        <ion-col style="text-align: right">
+          <ion-label>$</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-button fill="outline" color="success" [routerLink]="['/basic']">Basic Starter Kit</ion-button>
+    </ion-grid>
   </ion-card>
+
   <ion-card class="kit-card">
+    <ion-row>
+      <ion-col style="text-align: left">
+        <ion-label>Label</ion-label>
+      </ion-col>
+      <ion-col style="text-align: right">
+        <ion-label>$$</ion-label>
+      </ion-col>
+    </ion-row>
     <ion-button fill="outline" color="success" [routerLink]="['/customized']">Customized Starter Kit</ion-button>
   </ion-card>
   <ion-card class="kit-card">
+    <ion-row>
+      <ion-col style="text-align: left">
+        <ion-label>Label</ion-label>
+      </ion-col>
+      <ion-col style="text-align: right">
+        <ion-label>$$</ion-label>
+      </ion-col>
+    </ion-row>
     <ion-button fill="outline" color="success" [routerLink]="['/omekinawew']">Omekinawew Starter Kit</ion-button>
   </ion-card>
   <ion-card class="kit-card">
+    <ion-row>
+      <ion-col style="text-align: left">
+        <ion-label>Label</ion-label>
+      </ion-col>
+      <ion-col style="text-align: right">
+        <ion-label>$$$</ion-label>
+      </ion-col>
+    </ion-row>
     <ion-button fill="outline" color="success" [routerLink]="['/harvest']">Harvest Wall Starter Kit</ion-button>
   </ion-card>
 </ion-content>

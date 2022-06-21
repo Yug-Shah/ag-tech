@@ -1,14 +1,21 @@
-<ion-app>
-  <ion-content class="ion-padding ion-text-center" style="text-align: center">
-    <img src="../../../assets/img.png" style="width:auto; height:20%">
-    <ion-list style="text-align:center; margin-top: 10%">
-      <ion-input placeholder="First Name" color="success" class="form-input" required></ion-input>
-      <ion-input placeholder="Last Name" color="success" class="form-input" required></ion-input>
-      <ion-input placeholder="Email" autocomplete="email" color="success" type="email" class="form-input" required></ion-input>
-      <ion-input placeholder="Postal Code" color="success" class="form-input" required></ion-input>
-      <ion-input placeholder="Password" color="success" type="password" class="form-input" required></ion-input>
-      <ion-input placeholder="Confirm Password" color="success" type="password" class="form-input" required></ion-input>
-      <ion-button color="success" shape="round" [routerLink]="['/tabs']">Sign Up</ion-button>
-    </ion-list>
-  </ion-content>
-</ion-app>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline" [routerLink]="['/kits']"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list style="padding-bottom: 20px">
+    <ion-label style="margin-top: 20px">The Basic Starter Kit contains the following items:</ion-label>
+    <ion-item>Soil - $10.99</ion-item>
+    <ion-item>Spade - $34.99</ion-item>
+    <ion-item>Sugar Snap Peas - $2.39</ion-item>
+    <ion-item>Bean Seeds - $2.39</ion-item>
+    <!--    <ion-item>Cucumber Seeds - $2.99</ion-item>-->
+    <ion-item>Lettuce Seeds - $2.09</ion-item>
+  </ion-list>
+  <ion-label >You can buy this for the price of $100 CAD</ion-label>
+  <ion-button style="padding-top: 20px">Order Now</ion-button>
+</ion-content>
