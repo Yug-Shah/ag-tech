@@ -1,17 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Starting Kit
+      My Garden
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Starting Kit</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Starting Kits</ion-card-title>
+      <ion-card-subtitle>Buy a starting kit for your garden</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Links to ordering starter kits
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Starting Kit"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <!--      <ion-card-subtitle>Information</ion-card-subtitle>-->
+      <ion-card-title>Finance</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Income</ion-label>
+        <ion-badge color="success" slot="end">+$100</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Expenses</ion-label>
+        <ion-badge color="danger" slot="end">-$50</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Total</ion-label>
+        <ion-badge color="success" slot="end">+$50</ion-badge>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Gardening Grid</ion-card-title>
+      <ion-card-subtitle>Virtually build your garden</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      create a grid to allow people to map their backyard garden to this virtual garden
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -12,16 +12,11 @@
     <ion-label>Notifications</ion-label>
     <ion-badge color="danger" slot="end">10</ion-badge>
   </ion-button>
-  <ion-modal trigger="notif"
-    [isOpen]="false"
-    [breakpoints]="[0.1, 0.5, 1]"
-    [initialBreakpoint]="0.5"
-  >
+  <ion-modal [isOpen]="false" [swipeToClose]="true" trigger="notif" >
     <ng-template>
       <ion-content>Notifications</ion-content>
     </ng-template>
   </ion-modal>
-
 
   <ion-card>
     <ion-card-header>
