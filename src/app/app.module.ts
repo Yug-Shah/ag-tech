@@ -8,10 +8,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {UserService} from './service/user.service';
+import {LoginComponent} from './components/login/login.component';
+import {SignupComponent} from './components/signup/signup.component';
+import {IntroductionComponent} from './components/introduction/introduction.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule,
