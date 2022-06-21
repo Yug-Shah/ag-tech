@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import {IntroductionComponent} from './components/introduction/introduction.component';
 import {LoginComponent} from './components/login/login.component';
+import {BuyComponent} from './components/buy/buy.component';
+import {SellComponent} from './components/sell/sell.component';
 
 const routes: Routes = [
   {
@@ -20,6 +22,14 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./components/tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'buy',
+    component: BuyComponent
+  },
+  {
+    path: 'sell',
+    component: SellComponent
   }
 ];
 @NgModule({
