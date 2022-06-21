@@ -8,8 +8,8 @@ import {VictorygardenComponent} from './components/victory-garden/victorygarden.
 import {SignupComponent} from './components/signup/signup.component';
 import {BasicStarterkitComponent} from './components/basic-starterkit/basic-starterkit.component';
 import {HarvestStarterkitComponent} from './components/harvest-starterkit/harvest-starterkit.component';
-import {CustomizedStarterkitComponent} from "./components/customized-starterkit/customized-starterkit.component";
-import {IndigenousStarterkitComponent} from "./components/indigenous-starterkit/indigenous-starterkit.component";
+import {CustomizedStarterkitComponent} from './components/customized-starterkit/customized-starterkit.component';
+import {IndigenousStarterkitComponent} from './components/indigenous-starterkit/indigenous-starterkit.component';
 
 const routes: Routes = [
   {
