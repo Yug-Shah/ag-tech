@@ -7,10 +7,14 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
+import {IntroductionComponent} from './components/introduction/introduction.component';
+import {LoginComponent} from './components/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IntroductionComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserModule, HttpClientModule
