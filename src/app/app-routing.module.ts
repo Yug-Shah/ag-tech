@@ -4,7 +4,8 @@ import {IntroductionComponent} from './components/introduction/introduction.comp
 import {LoginComponent} from './components/login/login.component';
 import {BuyComponent} from './components/buy/buy.component';
 import {SellComponent} from './components/sell/sell.component';
-import {SignupComponent} from "./components/signup/signup.component";
+import {VictorygardenComponent} from './components/victory-garden/victorygarden.component';
+import {SignupComponent} from './components/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'sell',
     component: SellComponent
+  },
+  {
+    path: 'kits',
+    component: VictorygardenComponent
   }
 ];
 @NgModule({

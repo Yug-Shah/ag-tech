@@ -1,48 +1,57 @@
-<ion-app>
-  <ion-content>
-    <ion-item style="margin-top: 35px; margin-bottom: 15px">Manage the products you are selling: </ion-item>
-    <ion-grid>
-      <ion-row id="row1">
-        <ion-col id="col11">
-          <ion-card class="product11">
-            <img src="../../../assets/BuyProducts/1.png"/>
-            <div class="myOverlay">
-              <div class="card-title">Tomatoes</div>
-              <div class="card-subtitle">$5 / lb</div>
-            </div>
-          </ion-card>
-        </ion-col>
-        <ion-col id="col12">
-          <ion-card class="product12">
-            <img src="../../../assets/BuyProducts/2.jpg"/>
-            <div class="myOverlay">
-              <div class="card-title">Potatoes</div>
-              <div class="card-subtitle">$3 / lb</div>
-            </div>
-          </ion-card>
-        </ion-col>
-      </ion-row>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline" [routerLink]="['/tabs/tab4']"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-      <ion-row id="row2">
-        <ion-col id="col21">
-          <ion-card class="product21">
-            <img src="../../../assets/BuyProducts/3.jpg"/>
-            <div class="myOverlay">
-              <div class="card-title">Green Onions</div>
-              <div class="card-subtitle">$2 / lb</div>
-            </div>
-          </ion-card>
-        </ion-col>
-        <ion-col id="col22">
-          <ion-card class="product22">
-            <img src="../../../assets/BuyProducts/4.jpg"/>
-            <div class="myOverlay">
-              <div class="card-title">Red Onions</div>
-              <div class="card-subtitle">$8 / lb</div>
-            </div>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
-</ion-app>
+<ion-content>
+  <ion-searchbar animated style="margin-top: 35px" showCancelButton="focus" autocorrect="on"></ion-searchbar>
+
+  <ion-item style="margin-top: 15px; margin-bottom: 15px">Manage the products you are selling: </ion-item>
+  <ion-grid>
+    <ion-row id="row1">
+      <ion-col id="col11">
+        <ion-card class="product11">
+          <img src="../../../assets/BuyProducts/1.png"/>
+          <div class="myOverlay">
+            <div class="card-title">Tomatoes</div>
+            <div class="card-subtitle">$5 / lb</div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col id="col12">
+        <ion-card class="product12">
+          <img src="../../../assets/BuyProducts/2.jpg"/>
+          <div class="myOverlay">
+            <div class="card-title">Potatoes</div>
+            <div class="card-subtitle">$3 / lb</div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row id="row2">
+      <ion-col id="col21">
+        <ion-card class="product21">
+          <img src="../../../assets/BuyProducts/3.jpg"/>
+          <div class="myOverlay">
+            <div class="card-title">Green Onions</div>
+            <div class="card-subtitle">$2 / lb</div>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col id="col22">
+        <ion-card class="product22">
+          <img src="../../../assets/BuyProducts/4.jpg"/>
+          <div class="myOverlay">
+            <div class="card-title">Red Onions</div>
+            <div class="card-subtitle">$8 / lb</div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

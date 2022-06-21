@@ -12,13 +12,20 @@ import {LoginComponent} from './components/login/login.component';
 import {SignupComponent} from './components/signup/signup.component';
 import {IntroductionComponent} from './components/introduction/introduction.component';
 import {WeatherService} from './service/weather.service';
+import {VictorygardenComponent} from './components/victory-garden/victorygarden.component';
+import {BuyComponent} from './components/buy/buy.component';
+import {SellComponent} from './components/sell/sell.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    VictorygardenComponent,
+    BuyComponent,
+    SellComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule,
