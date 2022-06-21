@@ -9,12 +9,23 @@
 
 <ion-content [fullscreen] = "false">
   <ion-button expand="block" id="notif">
-    <ion-label>Notifications</ion-label>
+    <ion-label>Notifications:</ion-label>
     <ion-badge color="danger" slot="end">10</ion-badge>
   </ion-button>
   <ion-modal [isOpen]="false" [swipeToClose]="true" trigger="notif" >
     <ng-template>
-      <ion-content>Notifications</ion-content>
+      <ion-content>
+        Notifications
+        <ion-item>
+          It's time to water your plants!
+        </ion-item>
+        <ion-item>
+          Looks like theres a storm brewing! It'll be good to cover up your backyard with something sturdy!
+        </ion-item>
+        <ion-item>
+          It's time to water your plants!
+        </ion-item>
+      </ion-content>
     </ng-template>
   </ion-modal>
 
