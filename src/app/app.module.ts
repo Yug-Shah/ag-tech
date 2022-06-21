@@ -17,6 +17,8 @@ import {BuyComponent} from './components/buy/buy.component';
 import {SellComponent} from './components/sell/sell.component';
 import {BasicStarterkitComponent} from './components/basic-starterkit/basic-starterkit.component';
 import {HarvestStarterkitComponent} from './components/harvest-starterkit/harvest-starterkit.component';
+import {IndigenousStarterkitComponent} from "./components/indigenous-starterkit/indigenous-starterkit.component";
+import {CustomizedStarterkitComponent} from "./components/customized-starterkit/customized-starterkit.component";
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import {HarvestStarterkitComponent} from './components/harvest-starterkit/harves
     BuyComponent,
     SellComponent,
     BasicStarterkitComponent,
-    HarvestStarterkitComponent
+    HarvestStarterkitComponent,
+    CustomizedStarterkitComponent,
+    IndigenousStarterkitComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule,
