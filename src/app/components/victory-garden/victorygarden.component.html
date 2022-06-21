@@ -8,9 +8,17 @@
 
 <ion-content>
   <ion-searchbar animated style="margin-top: 35px" showCancelButton="focus" autocorrect="on"></ion-searchbar>
-  <ion-card>Basic</ion-card>
-  <ion-card>Customized</ion-card>
-  <ion-card>Omekinawew</ion-card>
-  <ion-card>Harvest Wall</ion-card>
+  <ion-card>
+    <ion-button shape="outline" [routerLink]="['/basic']">Basic Starter Kit</ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-button shape="outline" [routerLink]="['/customized']">Customized Starter Kit</ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-button shape="outline" [routerLink]="['/omekinawew']">Omekinawew Starter Kit</ion-button>
+  </ion-card>
+  <ion-card>
+    <ion-button shape="outline" [routerLink]="['/harvest']">Harvest Wall Starter Kit</ion-button>
+  </ion-card>
 </ion-content>
 

@@ -6,6 +6,8 @@ import {BuyComponent} from './components/buy/buy.component';
 import {SellComponent} from './components/sell/sell.component';
 import {VictorygardenComponent} from './components/victory-garden/victorygarden.component';
 import {SignupComponent} from './components/signup/signup.component';
+import {BasicStarterkitComponent} from './components/basic-starterkit/basic-starterkit.component';
+import {HarvestStarterkitComponent} from './components/harvest-starterkit/harvest-starterkit.component';
 
 const routes: Routes = [
   {
@@ -40,7 +42,16 @@ const routes: Routes = [
   {
     path: 'kits',
     component: VictorygardenComponent
+  },
+  {
+    path: 'basic',
+    component: BasicStarterkitComponent
+  },
+  {
+    path: 'harvest',
+    component: HarvestStarterkitComponent
   }
+
 ];
 @NgModule({
   imports: [

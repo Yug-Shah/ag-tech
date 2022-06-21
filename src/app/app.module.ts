@@ -15,6 +15,8 @@ import {WeatherService} from './service/weather.service';
 import {VictorygardenComponent} from './components/victory-garden/victorygarden.component';
 import {BuyComponent} from './components/buy/buy.component';
 import {SellComponent} from './components/sell/sell.component';
+import {BasicStarterkitComponent} from './components/basic-starterkit/basic-starterkit.component';
+import {HarvestStarterkitComponent} from './components/harvest-starterkit/harvest-starterkit.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import {SellComponent} from './components/sell/sell.component';
     IntroductionComponent,
     VictorygardenComponent,
     BuyComponent,
-    SellComponent
+    SellComponent,
+    BasicStarterkitComponent,
+    HarvestStarterkitComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule,
