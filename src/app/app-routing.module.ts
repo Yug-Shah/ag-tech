@@ -4,6 +4,7 @@ import {IntroductionComponent} from './components/introduction/introduction.comp
 import {LoginComponent} from './components/login/login.component';
 import {BuyComponent} from './components/buy/buy.component';
 import {SellComponent} from './components/sell/sell.component';
+import {SignupComponent} from "./components/signup/signup.component";
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'app-login',
     component: LoginComponent
+  },
+  {
+    path: 'app-signup',
+    component: SignupComponent
   },
   {
     path: 'tabs',
