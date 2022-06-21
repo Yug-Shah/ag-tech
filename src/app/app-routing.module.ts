@@ -46,11 +46,11 @@ const routes: Routes = [
     component: VictorygardenComponent
   },
   {
-    path:'customized-starterkit',
+    path:'customized',
     component: CustomizedStarterkitComponent
   },
   {
-    path:'indigenous-starterkit',
+    path:'omekinawew',
     component: IndigenousStarterkitComponent
   },
   {
