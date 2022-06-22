@@ -47,3 +47,4 @@ interface ModalOptions {
 interface ModalCustomEvent extends CustomEvent {
   target: HTMLIonModalElement;
 }
+
